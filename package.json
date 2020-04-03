@@ -1,0 +1,21 @@
+{
+  "name": "poker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "bash build.sh",
+    "start": "cd casino && node ./bin/casino-server.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willbenmitch/poker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willbenmitch/poker/issues"
+  },
+  "homepage": "https://github.com/willbenmitch/poker#readme"
+}
