@@ -1,11 +1,12 @@
 {
   "name": "poker",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Because Curv can't get a poker game to work.",
   "scripts": {
-    "build": "bash build.sh",
-    "start": "cd casino && node ./bin/casino-server.js"
+    "install": "npm-recursive-install",
+    "server": "cd casino && node bin/casino-server.js",
+    "distribute": "ssh -R 80:localhost:7000 ssh.localhost.run",
+    "start": "npm run server & npm run distribute"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,6 @@
   },
   "homepage": "https://github.com/willbenmitch/poker#readme",
   "dependencies": {
-    "casino-server": "^0.1.6",
-    "pm2": "^4.2.3"
+    "recursive-install": "^1.4.0"
   }
 }
