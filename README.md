@@ -1,5 +1,12 @@
-## Starting a Curv Poker Game
+# Poker
+leveraging the sub-module `casino` from https://github.com/floatinghotpot/casino-server.git
 
-- start redis: `redis-server & pm2 start "which casino-server" -i 0`
-- start server: `cd casino/ && node bin/casino-server.js`
-- expose port to internet: `ssh -R 80:localhost:7000 ssh.localhost.run`
+## Install
+
+`npm run install` - running npm install recursively
+
+## Running Options
+
+Start a server without making the game globally accessibly: `npm run server`
+
+start a game with distribution turned on: `npm run start`
